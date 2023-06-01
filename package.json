@@ -56,5 +56,10 @@
   "keywords": [
     "wagmi",
     "ethereum"
-  ]
+  ],
+  "dependencies": {
+    "@uniswap/sdk-core": "^3.2.2",
+    "@uniswap/v3-sdk": "^3.9.0",
+    "ethers": "^5.0.0"
+  }
 }
