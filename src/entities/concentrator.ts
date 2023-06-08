@@ -74,14 +74,13 @@ export class Concentrator {
 
         const amount1Optimal = this._quote(BigNumber.from(tokenAmount0.quotient.toString()), _reserve0, _reserve1);
 
-        if(amount1Optimal.lte(tokenAmount1.quotient.toString())){
+        if(amount1Optimal.lte(tokenAmount1.quotient.toString()) || tokenAmount1.equalTo(0)){
             const newCurrencyAmount1 = CurrencyAmount.fromRawAmount(tokenAmount1.currency, amount1Optimal.toString());
             return [tokenAmount0, newCurrencyAmount1];
         } else {
             const amount0Optimal = this._quote(BigNumber.from(amount1Optimal.toString()), _reserve1, _reserve0);
             const newCurrencyAmount0 = CurrencyAmount.fromRawAmount(tokenAmount0.currency, amount0Optimal.toString());
-            const newCurrencyAmount1 = CurrencyAmount.fromRawAmount(tokenAmount1.currency, amount1Optimal.toString());
-            return [newCurrencyAmount0, newCurrencyAmount1];
+            return [newCurrencyAmount0, tokenAmount1];
         }
     }
 
