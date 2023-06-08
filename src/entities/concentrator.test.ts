@@ -96,4 +96,55 @@ describe('Concentrator', () => {
             expect(amount1).toEqual(CurrencyAmount.fromFractionalAmount(fantomTokens.usdt, '10000', '1000'));
         });
     });
+
+    describe('#getOutputAmount', () => {
+        it('should return amount1', () => {
+            const amount0 = CurrencyAmount.fromRawAmount(fantomTokens.usdc, '100');
+            const amount1 = CurrencyAmount.fromRawAmount(fantomTokens.usdt, '0');
+
+            const constructor = new Concentrator(
+                constants.AddressZero,
+                [],
+                '1000000',
+                CurrencyAmount.fromRawAmount(fantomTokens.usdc, '10000'),
+                CurrencyAmount.fromRawAmount(fantomTokens.usdt, '10000'),
+            );
+
+            const amounts = constructor.getOutputAmount(amount0, amount1);
+            expect(amounts).toEqual([amount0, CurrencyAmount.fromRawAmount(fantomTokens.usdt, '100')]);
+        });
+
+        it('should return amount0', () => {
+            const amount0 = CurrencyAmount.fromRawAmount(fantomTokens.usdc, '0');
+            const amount1 = CurrencyAmount.fromRawAmount(fantomTokens.usdt, '100');
+
+            const constructor = new Concentrator(
+                constants.AddressZero,
+                [],
+                '1000000',
+                CurrencyAmount.fromRawAmount(fantomTokens.usdc, '10000'),
+                CurrencyAmount.fromRawAmount(fantomTokens.usdt, '10000'),
+            );
+
+            const amounts = constructor.getOutputAmount(amount0, amount1);
+            expect(amounts).toEqual([CurrencyAmount.fromRawAmount(fantomTokens.usdc, '100'), amount1]);
+        });
+    });
+
+    describe('#getLiquidityMinted', () => {
+        it('should return liquidity amount', () => {
+            const constructor = new Concentrator(
+                constants.AddressZero,
+                [],
+                '1000000',
+                CurrencyAmount.fromRawAmount(fantomTokens.usdc, '10000'),
+                CurrencyAmount.fromRawAmount(fantomTokens.usdt, '10000'),
+            );
+
+            const amount0 = CurrencyAmount.fromRawAmount(fantomTokens.usdc, '100');
+            const amount1 = CurrencyAmount.fromRawAmount(fantomTokens.usdt, '100');
+            const liquidityAmount = constructor.getLiquidityMinted(amount0, amount1);
+            expect(liquidityAmount).toEqual(CurrencyAmount.fromRawAmount(constructor.liquidityToken, '10000'));
+        });
+    });
 });
