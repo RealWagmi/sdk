@@ -1,10 +1,13 @@
-import { Currency, NativeCurrency, Token } from '@uniswap/sdk-core';
-import { WETH9, SupportedChainId } from '../constants';
+import { WETH9 } from '../constants/weth9';
+import { ChainId } from '../constants/chains';
 import invariant from 'tiny-invariant';
+import { NativeCurrency } from './native-currency';
+import { Currency } from './currency';
+import { Token } from './token';
 
 export class FantomNativeCurrency extends NativeCurrency {
     public constructor() {
-        super(SupportedChainId.FANTOM, 18, 'FTM', 'FTM');
+        super(ChainId.FANTOM, 18, 'FTM', 'FTM');
     }
 
     public equals(other: Currency): boolean {

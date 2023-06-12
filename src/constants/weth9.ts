@@ -1,11 +1,11 @@
-import { WETH9 as DefaultWETH9, Token } from '@uniswap/sdk-core';
-import { SupportedChainId } from './types';
-import { fantomTokens, zkSyncTokens } from '../tokens';
+import { ChainId } from './chains';
+import { fantomTokens } from '../tokens/chains/fantom';
+import { zkSyncTokens } from '../tokens/chains/zksync';
+import { Token } from '../entities';
 /**
  * Known WETH9 implementation addresses, used in our implementation of Ether#wrapped
  */
 export const WETH9: { [chainId: number]: Token } = {
-    ...DefaultWETH9,
-    [SupportedChainId.ZK_SYNC]: zkSyncTokens.weth,
-    [SupportedChainId.FANTOM]: fantomTokens.wftm,
+    [ChainId.ZK_SYNC]: zkSyncTokens.weth,
+    [ChainId.FANTOM]: fantomTokens.wftm,
 };

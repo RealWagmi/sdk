@@ -1,5 +1,6 @@
 import { FantomNativeCurrency } from './fantom-native-currency';
-import { WETH9, SupportedChainId } from '../constants';
+import { WETH9 } from '../constants/weth9';
+import { ChainId } from '../constants/chains';
 
 describe('FantomNativeCurrency', () => {
     describe('#equals', () => {
@@ -7,7 +8,7 @@ describe('FantomNativeCurrency', () => {
             expect(new FantomNativeCurrency().equals(new FantomNativeCurrency())).toStrictEqual(true);
         });
         it('get wrapped token', () => {
-            expect(WETH9[SupportedChainId.FANTOM].equals(new FantomNativeCurrency().wrapped)).toStrictEqual(true);
+            expect(WETH9[ChainId.FANTOM].equals(new FantomNativeCurrency().wrapped)).toStrictEqual(true);
         });
     });
 });

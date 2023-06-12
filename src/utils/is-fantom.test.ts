@@ -1,11 +1,11 @@
-import { SupportedChainId } from '../constants';
+import { ChainId } from '../constants/chains';
 import { isFantom } from './is-fantom';
 
 describe('#isFantom', () => {
     it('should return true', () => {
-        expect(isFantom(SupportedChainId.FANTOM)).toStrictEqual(true);
+        expect(isFantom(ChainId.FANTOM)).toStrictEqual(true);
     });
     it('should return false', () => {
-        expect(isFantom(SupportedChainId.ZK_SYNC)).toStrictEqual(false);
+        expect(isFantom(ChainId.ZK_SYNC)).toStrictEqual(false);
     });
 });
