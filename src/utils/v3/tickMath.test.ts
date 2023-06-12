@@ -1,5 +1,4 @@
-import { describe, it, expect } from 'vitest';
-import { ONE } from '../internalConstants';
+import { ONE } from './constants';
 import { TickMath } from './tickMath';
 
 describe('TickMath', () => {

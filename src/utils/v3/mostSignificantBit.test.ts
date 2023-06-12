@@ -1,6 +1,4 @@
-import { MaxUint256 } from '@pancakeswap/swap-sdk-core';
-import { describe, it, expect } from 'vitest';
-import { ONE } from '../internalConstants';
+import { ONE, MaxUint256 } from './constants';
 import { mostSignificantBit } from './mostSignificantBit';
 
 describe('mostSignificantBit', () => {
