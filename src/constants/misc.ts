@@ -13,5 +13,7 @@ export enum Rounding {
 
 export const ZERO = 0n;
 export const ONE = 1n;
+export const TWO = 2n
+export const THREE = 3n
 
 export const MaxUint256 = BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff');
