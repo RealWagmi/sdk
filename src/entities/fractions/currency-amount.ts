@@ -37,7 +37,7 @@ export class CurrencyAmount<T extends Currency> extends Fraction {
         super(numerator, denominator);
         invariant(this.quotient <= MaxUint256, 'AMOUNT');
         this.currency = currency;
-        this.decimalScale = 10n ** BigInt(currency.decimals);
+        this.decimalScale = BigInt(10 ** currency.decimals);
     }
 
     public add(other: CurrencyAmount<T>): CurrencyAmount<T> {
