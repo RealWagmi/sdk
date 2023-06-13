@@ -1,13 +1,11 @@
 {
   "name": "@real-wagmi/sdk",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
