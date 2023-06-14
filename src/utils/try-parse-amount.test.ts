@@ -1,5 +1,5 @@
 import { fantomTokens } from '../tokens';
-import tryParseAmount from './try-parse-amount';
+import { tryParseAmount } from './try-parse-amount';
 
 describe('utils/tryParseAmount', () => {
     it('should be undefined when no valid input', () => {
