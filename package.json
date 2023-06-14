@@ -1,9 +1,10 @@
 {
   "name": "@real-wagmi/sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/index.mjs",
   "files": [
     "dist"
   ],
@@ -14,16 +15,15 @@
     "access": "public"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsup --watch",
+    "build": "tsup",
     "test": "jest",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
   "author": "Wagmi",
-  "module": "dist/sdk.esm.js",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.2.4",
     "@types/big.js": "^6.1.6",
@@ -34,6 +34,7 @@
     "ts-jest": "^29.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.2",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
   "repository": "https://github.com/RealWagmi/sdk.git",
