@@ -1,10 +1,10 @@
 import { SerializedToken, Token } from './token'
 import { TokenInfo, TokenList } from '@uniswap/token-lists'
-import { isAddress } from 'viem'
+import { Address, isAddress } from 'viem'
 
 export interface SerializedWrappedToken extends SerializedToken {
   chainId: number
-  address: `0x${string}`
+  address: Address
   decimals: number
   symbol?: string
   name?: string
