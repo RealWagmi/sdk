@@ -6,6 +6,6 @@ describe('#isFantom', () => {
         expect(isFantom(ChainId.FANTOM)).toStrictEqual(true);
     });
     it('should return false', () => {
-        expect(isFantom(ChainId.ZK_SYNC)).toStrictEqual(false);
+        expect(isFantom(ChainId.ZKSYNC)).toStrictEqual(false);
     });
 });

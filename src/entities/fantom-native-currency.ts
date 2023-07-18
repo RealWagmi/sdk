@@ -15,7 +15,7 @@ export class FantomNativeCurrency extends NativeCurrency {
     }
 
     get wrapped(): Token {
-        const wrapped = WETH9[this.chainId];
+        const wrapped = WETH9[ChainId.FANTOM];
         invariant(wrapped instanceof Token);
         return wrapped;
     }
