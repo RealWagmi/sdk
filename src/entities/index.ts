@@ -6,3 +6,7 @@ export * from './native-currency';
 export * from './token';
 export * from './fractions';
 export * from './wrapped-token-info';
+export * from './bsc-native-currency';
+export * from './polygon-native-currency';
+export * from './kava-native-currency';
+export * from './avalanche-native-currency';

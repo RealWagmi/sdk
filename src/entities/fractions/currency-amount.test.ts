@@ -26,9 +26,9 @@ describe('CurrencyAmount', () => {
 
     describe('#ether', () => {
         it('produces ether amount', () => {
-            const amount = CurrencyAmount.fromRawAmount(Ether.onChain(ChainId.ZK_SYNC), 100);
+            const amount = CurrencyAmount.fromRawAmount(Ether.onChain(ChainId.ZKSYNC), 100);
             expect(amount.quotient).toEqual(100n);
-            expect(amount.currency).toEqual(Ether.onChain(ChainId.ZK_SYNC));
+            expect(amount.currency).toEqual(Ether.onChain(ChainId.ZKSYNC));
         });
     });
 
