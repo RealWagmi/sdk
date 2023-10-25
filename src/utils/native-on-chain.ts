@@ -20,17 +20,13 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
     let nativeCurrency: NativeCurrency | Token;
     if (isFantom(chainId)) {
         nativeCurrency = new FantomNativeCurrency();
-    }
-    if (isAvalanche(chainId)) {
+    } else if (isAvalanche(chainId)) {
         nativeCurrency = new AvalancheNativeCurrency();
-    }
-    if (isKava(chainId)) {
+    } else if (isKava(chainId)) {
         nativeCurrency = new KavaNativeCurrency();
-    }
-    if (isBsc(chainId)) {
+    } else if (isBsc(chainId)) {
         nativeCurrency = new BscNativeCurrency();
-    }
-    if (isPolygon(chainId)) {
+    } else if (isPolygon(chainId)) {
         nativeCurrency = new PolygonNativeCurrency();
     } else {
         nativeCurrency = Ether.onChain(chainId);
