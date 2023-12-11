@@ -9,3 +9,8 @@ export enum ChainId {
     AVALANCHE = 43114,
     ARBITRUM = 42161,
 }
+
+export enum ChainType {
+    L1,
+    L2,
+}
