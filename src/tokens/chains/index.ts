@@ -7,3 +7,4 @@ export * from './polygon';
 export * from './kava';
 export * from './avalance';
 export * from './arbitrum';
+export * from './metis';

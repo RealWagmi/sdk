@@ -5,6 +5,7 @@ export enum ChainId {
     POLYGON = 137,
     FANTOM = 250,
     ZKSYNC = 324,
+    METIS = 1088,
     KAVA = 2222,
     AVALANCHE = 43114,
     ARBITRUM = 42161,

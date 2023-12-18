@@ -18,4 +18,7 @@ describe('#nativeOnChain', () => {
     it('should return true', () => {
         expect(nativeOnChain(ChainId.POLYGON).wrapped.equals(WETH9[ChainId.POLYGON])).toStrictEqual(true);
     });
+    it('should return true', () => {
+        expect(nativeOnChain(ChainId.METIS).wrapped.equals(WETH9[ChainId.METIS])).toStrictEqual(true);
+    });
 });

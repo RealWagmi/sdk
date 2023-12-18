@@ -1,17 +1,12 @@
-import { Token } from '../entities/token';
-import { NativeCurrency } from '../entities/native-currency';
 import { isFantom } from './is-fantom';
 import { isAvalanche } from './is-avalanche';
 import { isKava } from './is-kava';
 import { isBsc } from './is-bsc';
 import { isPolygon } from './is-polygon';
 import { Ether } from '../entities/ether';
-import { FantomNativeCurrency } from '../entities/fantom-native-currency';
-import { AvalancheNativeCurrency } from '../entities/avalanche-native-currency';
-import { BscNativeCurrency } from '../entities/bsc-native-currency';
-import { KavaNativeCurrency } from '../entities/kava-native-currency';
-import { PolygonNativeCurrency } from '../entities/polygon-native-currency';
+import { AvalancheNativeCurrency, BscNativeCurrency, FantomNativeCurrency, KavaNativeCurrency, MetisNativeCurrency, PolygonNativeCurrency, Token, NativeCurrency } from '../entities';
 import { ChainId } from '../constants/chains';
+import { isMetis } from './is-metis';
 
 const cachedNativeCurrency: { [chainId: number]: NativeCurrency | Token } = {};
 
@@ -28,6 +23,8 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new BscNativeCurrency();
     } else if (isPolygon(chainId)) {
         nativeCurrency = new PolygonNativeCurrency();
+    } else if (isMetis(chainId)) {
+        nativeCurrency = new MetisNativeCurrency();
     } else {
         nativeCurrency = Ether.onChain(chainId);
     }

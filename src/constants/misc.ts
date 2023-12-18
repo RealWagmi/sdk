@@ -17,3 +17,10 @@ export const TWO = 2n;
 export const THREE = 3n;
 
 export const MaxUint256 = BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff');
+
+export enum Project {
+    WAGMI = 'wagmi',
+    UNISWAP = 'uniswap',
+    SUSHI = 'sushi',
+    PANCAKE = 'pancake'
+}

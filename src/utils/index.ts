@@ -8,3 +8,4 @@ export * from './is-bsc';
 export * from './is-polygon';
 export * from './is-kava';
 export * from './is-avalanche';
+export * from './is-metis';
