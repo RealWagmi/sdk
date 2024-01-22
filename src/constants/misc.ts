@@ -22,5 +22,6 @@ export enum Project {
     WAGMI = 'wagmi',
     UNISWAP = 'uniswap',
     SUSHI = 'sushi',
-    PANCAKE = 'pancake'
+    PANCAKE = 'pancake',
+    KINETIX = 'kinetix'
 }
