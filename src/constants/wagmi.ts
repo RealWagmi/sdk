@@ -5,7 +5,7 @@ import { Token } from '../entities';
 /**
  * Known Wagmi implementation addresses
  */
-export const WAGMI: { [chainId in ChainId]: Token } = {
+export const WAGMI = {
     [ChainId.ETHEREUM]: ethereumTokens.wagmi,
     [ChainId.OPTIMISM]: optimismTokens.wagmi,
     [ChainId.BSC]: bscTokens.wagmi,
@@ -16,4 +16,4 @@ export const WAGMI: { [chainId in ChainId]: Token } = {
     [ChainId.AVALANCHE]: avalancheTokens.wagmi,
     [ChainId.ARBITRUM]: arbitrumTokens.wagmi,
     [ChainId.METIS]: metisTokens.wagmi
-};
+} satisfies Record<ChainId, Token>;
