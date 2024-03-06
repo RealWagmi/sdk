@@ -8,3 +8,4 @@ export * from './kava';
 export * from './avalance';
 export * from './arbitrum';
 export * from './metis';
+export * from './blast';
