@@ -9,7 +9,7 @@ export enum ChainId {
     KAVA = 2222,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
-    BLAST = 81457
+    BLAST = 81457,
 }
 
 export enum ChainType {

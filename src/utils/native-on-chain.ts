@@ -4,7 +4,16 @@ import { isKava } from './is-kava';
 import { isBsc } from './is-bsc';
 import { isPolygon } from './is-polygon';
 import { Ether } from '../entities/ether';
-import { AvalancheNativeCurrency, BscNativeCurrency, FantomNativeCurrency, KavaNativeCurrency, MetisNativeCurrency, PolygonNativeCurrency, Token, NativeCurrency } from '../entities';
+import {
+    AvalancheNativeCurrency,
+    BscNativeCurrency,
+    FantomNativeCurrency,
+    KavaNativeCurrency,
+    MetisNativeCurrency,
+    PolygonNativeCurrency,
+    Token,
+    NativeCurrency,
+} from '../entities';
 import { ChainId } from '../constants/chains';
 import { isMetis } from './is-metis';
 

@@ -4,8 +4,8 @@ import toFormat from 'toformat';
 import { Currency } from '../currency';
 import { Token } from '../token';
 import { Fraction } from './fraction';
-
-import { BigintIsh, Rounding, MaxUint256 } from '../../constants/misc';
+import { maxUint256 } from 'viem';
+import { BigintIsh, Rounding } from '../../constants/misc';
 
 const Big = toFormat(_Big);
 
@@ -35,7 +35,7 @@ export class CurrencyAmount<T extends Currency> extends Fraction {
 
     protected constructor(currency: T, numerator: BigintIsh, denominator?: BigintIsh) {
         super(numerator, denominator);
-        invariant(this.quotient <= MaxUint256, 'AMOUNT');
+        invariant(this.quotient <= maxUint256, 'AMOUNT');
         this.currency = currency;
         this.decimalScale = BigInt(10 ** currency.decimals);
     }

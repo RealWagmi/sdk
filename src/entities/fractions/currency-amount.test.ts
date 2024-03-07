@@ -1,4 +1,4 @@
-import { MaxUint256 } from '../../constants/misc';
+import { maxUint256 } from 'viem';
 import { ChainId } from '../../constants/chains';
 import { Ether } from '../ether';
 import { Token } from '../token';
@@ -33,18 +33,18 @@ describe('CurrencyAmount', () => {
     });
 
     it('token amount can be max uint256', () => {
-        const amount = CurrencyAmount.fromRawAmount(new Token(1, ADDRESS_ONE, 18), MaxUint256);
-        expect(amount.quotient).toEqual(MaxUint256);
+        const amount = CurrencyAmount.fromRawAmount(new Token(1, ADDRESS_ONE, 18), maxUint256);
+        expect(amount.quotient).toEqual(maxUint256);
     });
     it('token amount cannot exceed max uint256', () => {
-        expect(() => CurrencyAmount.fromRawAmount(new Token(1, ADDRESS_ONE, 18), MaxUint256 + 1n)).toThrow('AMOUNT');
+        expect(() => CurrencyAmount.fromRawAmount(new Token(1, ADDRESS_ONE, 18), maxUint256 + 1n)).toThrow('AMOUNT');
     });
     it('token amount quotient cannot exceed max uint256', () => {
-        expect(() => CurrencyAmount.fromFractionalAmount(new Token(1, ADDRESS_ONE, 18), MaxUint256 * 2n + 2n, 2n)).toThrow('AMOUNT');
+        expect(() => CurrencyAmount.fromFractionalAmount(new Token(1, ADDRESS_ONE, 18), maxUint256 * 2n + 2n, 2n)).toThrow('AMOUNT');
     });
     it('token amount numerator can be gt. uint256 if denominator is gt. 1', () => {
-        const amount = CurrencyAmount.fromFractionalAmount(new Token(1, ADDRESS_ONE, 18), MaxUint256 + 2n, 2);
-        expect(amount.numerator).toEqual(MaxUint256 + 2n);
+        const amount = CurrencyAmount.fromFractionalAmount(new Token(1, ADDRESS_ONE, 18), maxUint256 + 2n, 2);
+        expect(amount.numerator).toEqual(maxUint256 + 2n);
     });
 
     describe('#toFixed', () => {
