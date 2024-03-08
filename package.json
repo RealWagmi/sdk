@@ -17,7 +17,7 @@
   "scripts": {
     "start": "tsup --watch",
     "build": "tsup",
-    "test": "vitest",
+    "test": "vitest --run",
     "lint": "tsdx lint",
     "prepare": "yarn build",
     "size": "size-limit",
