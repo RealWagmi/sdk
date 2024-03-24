@@ -7,4 +7,5 @@ export const kavaTokens = {
     usdc: new Token(ChainId.KAVA, '0xfa9343c3897324496a05fc75abed6bac29f8a40f', 6, 'USDC', 'USD Coin'),
     usdt: new Token(ChainId.KAVA, '0x919c1c267bc06a7039e03fcc2ef738525769109c', 6, 'USDt', 'TetherUSDt'),
     weth: new Token(ChainId.KAVA, '0x2DfD4dE5AE386Cd3f4fC8e2cb39240852E47F5E8', 18, 'WETH', 'Wrapped Ether'),
+    atom: new Token(ChainId.KAVA, '0x15932E26f5BD4923d46a2b205191C4b5d5f43FE3', 6, 'ATOM', 'ATOM'),
 };
