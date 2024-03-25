@@ -1,6 +1,6 @@
 import invariant from 'tiny-invariant'
 import { Currency } from './currency'
-import type { Token } from './token'
+import type { SerializedToken, Token } from './token'
 
 /**
  * A currency is any fungible financial instrument, including Ether, all ERC20 tokens, and other chain-native currencies
@@ -64,4 +64,6 @@ export abstract class BaseCurrency {
    * implement this to be used in PancakeSwap
    */
   public abstract get wrapped(): Token
+
+  public abstract get serialize(): SerializedToken
 }

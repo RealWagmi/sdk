@@ -10,6 +10,8 @@ export interface SerializedToken {
     decimals: number;
     symbol?: string;
     name?: string;
+    isNative?: boolean;
+    isToken?: boolean;
 }
 
 /**
@@ -70,6 +72,8 @@ export class Token extends BaseCurrency {
             decimals: this.decimals,
             symbol: this.symbol,
             name: this.name,
+            isNative: this.isNative,
+            isToken: this.isToken
         };
     }
 }
