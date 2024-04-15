@@ -1,5 +1,5 @@
 import { ChainId } from './chains';
-import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens } from '../tokens';
+import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens } from '../tokens';
 
 import { Token } from '../entities';
 /**
@@ -16,5 +16,6 @@ export const WETH9 = {
     [ChainId.AVALANCHE]: avalancheTokens.wavax,
     [ChainId.ARBITRUM]: arbitrumTokens.weth,
     [ChainId.METIS]: metisTokens.wmetis,
-    [ChainId.BLAST]: blastTokens.weth
+    [ChainId.BLAST]: blastTokens.weth,
+    [ChainId.BASE]: baseTokens.weth
 } satisfies Record<ChainId, Token>;

@@ -1,5 +1,5 @@
 import { ChainId } from './chains';
-import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens } from '../tokens';
+import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens } from '../tokens';
 
 import { Token } from '../entities';
 /**
@@ -16,5 +16,6 @@ export const WAGMI = {
     [ChainId.AVALANCHE]: avalancheTokens.wagmi,
     [ChainId.ARBITRUM]: arbitrumTokens.wagmi,
     [ChainId.METIS]: metisTokens.wagmi,
-    [ChainId.BLAST]: blastTokens.wagmi
+    [ChainId.BLAST]: blastTokens.wagmi,
+    [ChainId.BASE]: baseTokens.wagmi
 } satisfies Record<ChainId, Token>;

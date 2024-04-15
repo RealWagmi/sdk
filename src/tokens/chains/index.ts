@@ -9,3 +9,4 @@ export * from './avalance';
 export * from './arbitrum';
 export * from './metis';
 export * from './blast';
+export * from './base';

@@ -7,6 +7,7 @@ export enum ChainId {
     ZKSYNC = 324,
     METIS = 1088,
     KAVA = 2222,
+    BASE = 8453,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
     BLAST = 81457,
