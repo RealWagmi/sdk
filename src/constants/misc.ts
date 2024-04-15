@@ -24,4 +24,5 @@ export enum Project {
     KINETIX = 'kinetix',
     THRUSTER = 'thruster',
     AMBIENT = 'ambient',
+    HERCULES = 'hercules',
 }
