@@ -16,6 +16,7 @@ test('exports', () => {
           "isKava",
           "isAvalanche",
           "isMetis",
+          "isMetisSepolia",
         ]
 	`);
 });

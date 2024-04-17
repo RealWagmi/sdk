@@ -73,7 +73,7 @@ export class Token extends BaseCurrency {
             symbol: this.symbol,
             name: this.name,
             isNative: this.isNative,
-            isToken: this.isToken
+            isToken: this.isToken,
         };
     }
 }

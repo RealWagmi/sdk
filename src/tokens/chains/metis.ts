@@ -1,5 +1,6 @@
 import { Token } from '../../entities/token';
 import { ChainId } from '../../constants/chains';
+import { zeroAddress } from 'viem';
 
 export const metisTokens = {
     wmetis: new Token(ChainId.METIS, '0x75cb093E4D61d2A2e65D8e0BBb01DE8d89b53481', 18, 'WMETIS', 'Wrapped METIS'),
@@ -8,4 +9,10 @@ export const metisTokens = {
     weth: new Token(ChainId.METIS, '0x420000000000000000000000000000000000000A', 18, 'WETH', 'Wrapped Ether'),
     wbtc: new Token(ChainId.METIS, '0xa5B55ab1dAF0F8e1EFc0eB1931a957fd89B918f4', 8, 'WBTC', 'Wrapped BTC'),
     wagmi: new Token(ChainId.METIS, '0xaf20f5f19698f1D19351028cd7103B63D30DE7d7', 18, 'WAGMI', 'Wagmi'),
+};
+
+export const metisSepoliaTokens = {
+    wmetis: new Token(ChainId.METIS_SEPOLIA, '0xaf20f5f19698f1D19351028cd7103B63D30DE7d7', 18, 'WMETIS', 'Wrapped METIS'),
+    weth: new Token(ChainId.METIS_SEPOLIA, '0x420000000000000000000000000000000000000A', 18, 'WETH', 'Wrapped Ether'),
+    wagmi: new Token(ChainId.METIS_SEPOLIA, zeroAddress, 18, 'WAGMI', 'Wagmi'),
 };

@@ -17,5 +17,6 @@ export const STABLE_COINS= {
     [ChainId.ARBITRUM]: [arbitrumTokens.usdt, arbitrumTokens.usdc, arbitrumTokens.usdc_e],
     [ChainId.METIS]: [metisTokens.usdt, metisTokens.usdc],
     [ChainId.BLAST]: [blastTokens.mim, blastTokens.usdb],
-    [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim]
+    [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim],
+    [ChainId.METIS_SEPOLIA]: []
 } satisfies Record<ChainId, Token[]>;

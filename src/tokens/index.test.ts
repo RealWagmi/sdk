@@ -14,7 +14,9 @@ test('exports', () => {
           "avalancheTokens",
           "arbitrumTokens",
           "metisTokens",
+          "metisSepoliaTokens",
           "blastTokens",
+          "baseTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
         ]

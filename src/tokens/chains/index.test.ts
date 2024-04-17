@@ -14,7 +14,9 @@ test('exports', () => {
           "avalancheTokens",
           "arbitrumTokens",
           "metisTokens",
+          "metisSepoliaTokens",
           "blastTokens",
+          "baseTokens",
         ]
 	`);
 });

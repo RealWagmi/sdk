@@ -10,6 +10,7 @@ export enum ChainId {
     BASE = 8453,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
+    METIS_SEPOLIA = 59902,
     BLAST = 81457,
 }
 

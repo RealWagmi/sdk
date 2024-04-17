@@ -11,3 +11,4 @@ export * from './polygon-native-currency';
 export * from './kava-native-currency';
 export * from './avalanche-native-currency';
 export * from './metis-native-currency';
+export * from './metis-sepolia-native-currency';
