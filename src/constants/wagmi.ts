@@ -18,5 +18,5 @@ export const WAGMI = {
     [ChainId.METIS]: metisTokens.wagmi,
     [ChainId.BLAST]: blastTokens.wagmi,
     [ChainId.BASE]: baseTokens.wagmi,
-    [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.wagmi
+    [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.twagmi
 } satisfies Record<ChainId, Token>;
