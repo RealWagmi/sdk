@@ -12,9 +12,11 @@ export enum ChainId {
     ARBITRUM = 42161,
     METIS_SEPOLIA = 59902,
     BLAST = 81457,
+    ZKLINK = 810180
 }
 
 export enum ChainType {
     L1,
     L2,
+    L3
 }

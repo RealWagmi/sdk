@@ -10,3 +10,4 @@ export * from './arbitrum';
 export * from './metis';
 export * from './blast';
 export * from './base';
+export * from './zklink';

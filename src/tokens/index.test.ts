@@ -17,6 +17,7 @@ test('exports', () => {
           "metisSepoliaTokens",
           "blastTokens",
           "baseTokens",
+          "zkLinkTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
         ]

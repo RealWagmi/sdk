@@ -1,5 +1,5 @@
 import { ChainId } from './chains';
-import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens, metisSepoliaTokens } from '../tokens';
+import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens, metisSepoliaTokens, zkLinkTokens } from '../tokens';
 
 import { Token } from '../entities';
 /**
@@ -18,5 +18,6 @@ export const WAGMI = {
     [ChainId.METIS]: metisTokens.wagmi,
     [ChainId.BLAST]: blastTokens.wagmi,
     [ChainId.BASE]: baseTokens.wagmi,
-    [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.twagmi
+    [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.twagmi,
+    [ChainId.ZKLINK]: zkLinkTokens.wagmi
 } satisfies Record<ChainId, Token>;
