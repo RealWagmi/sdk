@@ -8,6 +8,7 @@ export enum ChainId {
     METIS = 1088,
     KAVA = 2222,
     BASE = 8453,
+    IOTA = 8822,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
     METIS_SEPOLIA = 59902,

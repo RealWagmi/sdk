@@ -1,5 +1,21 @@
 import { ChainId } from './chains';
-import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens, metisSepoliaTokens, zkLinkTokens } from '../tokens';
+import { 
+    arbitrumTokens, 
+    avalancheTokens, 
+    bscTokens, 
+    ethereumTokens, 
+    fantomTokens, 
+    kavaTokens, 
+    optimismTokens, 
+    polygonTokens, 
+    zkSyncTokens, 
+    metisTokens, 
+    blastTokens, 
+    baseTokens, 
+    metisSepoliaTokens, 
+    zkLinkTokens,
+    iotaTokens
+} from '../tokens';
 
 import { Token } from '../entities';
 /**
@@ -19,5 +35,6 @@ export const WETH9 = {
     [ChainId.BLAST]: blastTokens.weth,
     [ChainId.BASE]: baseTokens.weth,
     [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.wmetis,
-    [ChainId.ZKLINK]: zkLinkTokens.weth
+    [ChainId.ZKLINK]: zkLinkTokens.weth,
+    [ChainId.IOTA]: iotaTokens.wiota
 } satisfies Record<ChainId, Token>;

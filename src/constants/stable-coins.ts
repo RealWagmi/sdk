@@ -1,5 +1,21 @@
 import { ChainId } from './chains';
-import { arbitrumTokens, avalancheTokens, bscTokens, ethereumTokens, fantomTokens, kavaTokens, optimismTokens, polygonTokens, zkSyncTokens, metisTokens, blastTokens, baseTokens, metisSepoliaTokens, zkLinkTokens } from '../tokens';
+import { 
+    arbitrumTokens, 
+    avalancheTokens, 
+    bscTokens, 
+    ethereumTokens, 
+    fantomTokens, 
+    kavaTokens, 
+    optimismTokens, 
+    polygonTokens, 
+    zkSyncTokens, 
+    metisTokens, 
+    blastTokens, 
+    baseTokens, 
+    metisSepoliaTokens, 
+    zkLinkTokens,
+    iotaTokens
+} from '../tokens';
 
 import { Token } from '../entities';
 /**
@@ -19,5 +35,6 @@ export const STABLE_COINS= {
     [ChainId.BLAST]: [blastTokens.mim, blastTokens.usdb],
     [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim],
     [ChainId.METIS_SEPOLIA]: [metisSepoliaTokens.tusdt, metisSepoliaTokens.tdai],
-    [ChainId.ZKLINK]: [zkLinkTokens.usdt, zkLinkTokens.usdc, zkLinkTokens.dai]
+    [ChainId.ZKLINK]: [zkLinkTokens.usdt, zkLinkTokens.usdc, zkLinkTokens.dai],
+    [ChainId.IOTA]: [iotaTokens.usdt, iotaTokens.usdc]
 } satisfies Record<ChainId, Token[]>;

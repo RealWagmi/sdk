@@ -12,12 +12,14 @@ import {
     MetisNativeCurrency,
     MetisSepoliaNativeCurrency,
     PolygonNativeCurrency,
+    IotaNativeCurrency,
     Token,
     NativeCurrency,
 } from '../entities';
 import { ChainId } from '../constants/chains';
 import { isMetis } from './is-metis';
 import { isMetisSepolia } from './is-metis-sepolia';
+import { isIota } from './is-iota';
 
 const cachedNativeCurrency: { [chainId: number]: NativeCurrency | Token } = {};
 
@@ -38,6 +40,8 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new MetisNativeCurrency();
     } else if (isMetisSepolia(chainId)) {
         nativeCurrency = new MetisSepoliaNativeCurrency();
+    } if (isIota(chainId)) {
+        nativeCurrency = new IotaNativeCurrency();
     } else {
         nativeCurrency = Ether.onChain(chainId);
     }

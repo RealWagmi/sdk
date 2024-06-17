@@ -11,3 +11,4 @@ export * from './metis';
 export * from './blast';
 export * from './base';
 export * from './zklink';
+export * from './iota';

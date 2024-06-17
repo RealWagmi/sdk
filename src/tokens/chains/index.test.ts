@@ -18,6 +18,7 @@ test('exports', () => {
           "blastTokens",
           "baseTokens",
           "zkLinkTokens",
+          "iotaTokens",
         ]
 	`);
 });

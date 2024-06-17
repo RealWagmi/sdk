@@ -21,4 +21,7 @@ describe('#nativeOnChain', () => {
     it('should return true', () => {
         expect(nativeOnChain(ChainId.METIS).wrapped.equals(WETH9[ChainId.METIS])).toStrictEqual(true);
     });
+    it('should return true', () => {
+        expect(nativeOnChain(ChainId.IOTA).wrapped.equals(WETH9[ChainId.IOTA])).toStrictEqual(true);
+    });
 });

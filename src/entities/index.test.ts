@@ -21,6 +21,7 @@ test('exports', () => {
             "AvalancheNativeCurrency",
             "MetisNativeCurrency",
             "MetisSepoliaNativeCurrency",
+            "IotaNativeCurrency",
           ]
 	`);
 });

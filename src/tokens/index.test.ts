@@ -18,6 +18,7 @@ test('exports', () => {
           "blastTokens",
           "baseTokens",
           "zkLinkTokens",
+          "iotaTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
         ]
