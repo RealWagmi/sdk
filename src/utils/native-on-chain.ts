@@ -40,7 +40,7 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new MetisNativeCurrency();
     } else if (isMetisSepolia(chainId)) {
         nativeCurrency = new MetisSepoliaNativeCurrency();
-    } if (isIota(chainId)) {
+    } else if (isIota(chainId)) {
         nativeCurrency = new IotaNativeCurrency();
     } else {
         nativeCurrency = Ether.onChain(chainId);
