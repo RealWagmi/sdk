@@ -19,6 +19,7 @@ test('exports', () => {
           "baseTokens",
           "zkLinkTokens",
           "iotaTokens",
+          "sonicTestnetTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
         ]

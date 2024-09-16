@@ -14,7 +14,8 @@ import {
     baseTokens, 
     metisSepoliaTokens, 
     zkLinkTokens,
-    iotaTokens
+    iotaTokens,
+    sonicTestnetTokens
 } from '../tokens';
 
 import { Token } from '../entities';
@@ -36,5 +37,6 @@ export const STABLE_COINS= {
     [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim],
     [ChainId.METIS_SEPOLIA]: [metisSepoliaTokens.tusdt, metisSepoliaTokens.tdai],
     [ChainId.ZKLINK]: [zkLinkTokens.usdt, zkLinkTokens.usdc, zkLinkTokens.dai],
-    [ChainId.IOTA]: [iotaTokens.usdt, iotaTokens.usdc]
+    [ChainId.IOTA]: [iotaTokens.usdt, iotaTokens.usdc],
+    [ChainId.SONIC_TESTNET]: [sonicTestnetTokens.tusdt, sonicTestnetTokens.tdai]
 } satisfies Record<ChainId, Token[]>;

@@ -12,12 +12,13 @@ export enum ChainId {
     AVALANCHE = 43114,
     ARBITRUM = 42161,
     METIS_SEPOLIA = 59902,
+    SONIC_TESTNET = 64165,
     BLAST = 81457,
-    ZKLINK = 810180
+    ZKLINK = 810180,
 }
 
 export enum ChainType {
     L1,
     L2,
-    L3
+    L3,
 }

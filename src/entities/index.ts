@@ -13,3 +13,4 @@ export * from './avalanche-native-currency';
 export * from './metis-native-currency';
 export * from './metis-sepolia-native-currency';
 export * from './iota-native-currency';
+export * from './sonic-testnet-native-currency';

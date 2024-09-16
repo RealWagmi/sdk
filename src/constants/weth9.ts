@@ -14,7 +14,8 @@ import {
     baseTokens, 
     metisSepoliaTokens, 
     zkLinkTokens,
-    iotaTokens
+    iotaTokens,
+    sonicTestnetTokens
 } from '../tokens';
 
 import { Token } from '../entities';
@@ -36,5 +37,6 @@ export const WETH9 = {
     [ChainId.BASE]: baseTokens.weth,
     [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.wmetis,
     [ChainId.ZKLINK]: zkLinkTokens.weth,
-    [ChainId.IOTA]: iotaTokens.wiota
+    [ChainId.IOTA]: iotaTokens.wiota,
+    [ChainId.SONIC_TESTNET]: sonicTestnetTokens.ws,
 } satisfies Record<ChainId, Token>;

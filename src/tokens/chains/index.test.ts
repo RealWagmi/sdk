@@ -19,6 +19,7 @@ test('exports', () => {
           "baseTokens",
           "zkLinkTokens",
           "iotaTokens",
+          "sonicTestnetTokens",
         ]
 	`);
 });
