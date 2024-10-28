@@ -15,9 +15,7 @@ test('exports', () => {
           "arbitrumTokens",
           "metisTokens",
           "metisSepoliaTokens",
-          "blastTokens",
           "baseTokens",
-          "zkLinkTokens",
           "iotaTokens",
           "sonicTestnetTokens",
         ]

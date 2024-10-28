@@ -9,11 +9,9 @@ import {
     optimismTokens, 
     polygonTokens, 
     zkSyncTokens, 
-    metisTokens, 
-    blastTokens, 
+    metisTokens,
     baseTokens, 
-    metisSepoliaTokens, 
-    zkLinkTokens,
+    metisSepoliaTokens,
     iotaTokens,
     sonicTestnetTokens
 } from '../tokens';
@@ -33,10 +31,8 @@ export const WAGMI = {
     [ChainId.AVALANCHE]: avalancheTokens.wagmi,
     [ChainId.ARBITRUM]: arbitrumTokens.wagmi,
     [ChainId.METIS]: metisTokens.wagmi,
-    [ChainId.BLAST]: blastTokens.wagmi,
     [ChainId.BASE]: baseTokens.wagmi,
     [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.twagmi,
-    [ChainId.ZKLINK]: zkLinkTokens.wagmi,
     [ChainId.IOTA]: iotaTokens.wagmi,
     [ChainId.SONIC_TESTNET]: sonicTestnetTokens.twagmi,
 } satisfies Record<ChainId, Token>;

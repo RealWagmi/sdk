@@ -13,8 +13,6 @@ export enum ChainId {
     ARBITRUM = 42161,
     METIS_SEPOLIA = 59902,
     SONIC_TESTNET = 64165,
-    BLAST = 81457,
-    ZKLINK = 810180,
 }
 
 export enum ChainType {

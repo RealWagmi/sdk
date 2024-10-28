@@ -9,11 +9,9 @@ import {
     optimismTokens, 
     polygonTokens, 
     zkSyncTokens, 
-    metisTokens, 
-    blastTokens, 
+    metisTokens,
     baseTokens, 
-    metisSepoliaTokens, 
-    zkLinkTokens,
+    metisSepoliaTokens,
     iotaTokens,
     sonicTestnetTokens
 } from '../tokens';
@@ -33,10 +31,8 @@ export const WETH9 = {
     [ChainId.AVALANCHE]: avalancheTokens.wavax,
     [ChainId.ARBITRUM]: arbitrumTokens.weth,
     [ChainId.METIS]: metisTokens.wmetis,
-    [ChainId.BLAST]: blastTokens.weth,
     [ChainId.BASE]: baseTokens.weth,
     [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.wmetis,
-    [ChainId.ZKLINK]: zkLinkTokens.weth,
     [ChainId.IOTA]: iotaTokens.wiota,
     [ChainId.SONIC_TESTNET]: sonicTestnetTokens.ws,
 } satisfies Record<ChainId, Token>;
