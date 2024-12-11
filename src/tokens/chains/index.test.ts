@@ -17,6 +17,7 @@ test('exports', () => {
           "metisSepoliaTokens",
           "baseTokens",
           "iotaTokens",
+          "sonicTokens",
           "sonicTestnetTokens",
         ]
 	`);

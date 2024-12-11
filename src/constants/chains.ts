@@ -3,6 +3,7 @@ export enum ChainId {
     OPTIMISM = 10,
     BSC = 56,
     POLYGON = 137,
+    SONIC = 146,
     FANTOM = 250,
     ZKSYNC = 324,
     METIS = 1088,
@@ -11,8 +12,8 @@ export enum ChainId {
     IOTA = 8822,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
+    SONIC_TESTNET = 57054,
     METIS_SEPOLIA = 59902,
-    SONIC_TESTNET = 64165,
 }
 
 export enum ChainType {

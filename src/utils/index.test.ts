@@ -19,6 +19,7 @@ test('exports', () => {
           "isMetisSepolia",
           "isIota",
           "isSonicTestnet",
+          "isSonic",
         ]
 	`);
 });

@@ -17,6 +17,7 @@ test('exports', () => {
           "metisSepoliaTokens",
           "baseTokens",
           "iotaTokens",
+          "sonicTokens",
           "sonicTestnetTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
