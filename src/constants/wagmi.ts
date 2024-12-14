@@ -13,7 +13,6 @@ import {
     baseTokens, 
     metisSepoliaTokens,
     iotaTokens,
-    sonicTestnetTokens,
     sonicTokens
 } from '../tokens';
 
@@ -35,6 +34,5 @@ export const WAGMI = {
     [ChainId.BASE]: baseTokens.wagmi,
     [ChainId.METIS_SEPOLIA]: metisSepoliaTokens.twagmi,
     [ChainId.IOTA]: iotaTokens.wagmi,
-    [ChainId.SONIC_TESTNET]: sonicTestnetTokens.twagmi,
     [ChainId.SONIC]: sonicTokens.wagmi
 } satisfies Record<ChainId, Token>;

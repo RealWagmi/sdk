@@ -18,7 +18,6 @@ test('exports', () => {
           "isMetis",
           "isMetisSepolia",
           "isIota",
-          "isSonicTestnet",
           "isSonic",
         ]
 	`);

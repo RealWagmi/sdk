@@ -13,7 +13,6 @@ import {
     MetisSepoliaNativeCurrency,
     PolygonNativeCurrency,
     IotaNativeCurrency,
-    SonicTestnetNativeCurrency,
     Token,
     NativeCurrency,
     SonicNativeCurrency,
@@ -22,7 +21,6 @@ import { ChainId } from '../constants/chains';
 import { isMetis } from './is-metis';
 import { isMetisSepolia } from './is-metis-sepolia';
 import { isIota } from './is-iota';
-import { isSonicTestnet } from './is-sonic-testnet';
 import { isSonic } from './is-sonic';
 
 const cachedNativeCurrency: { [chainId: number]: NativeCurrency | Token } = {};
@@ -46,8 +44,6 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new MetisSepoliaNativeCurrency();
     } else if (isIota(chainId)) {
         nativeCurrency = new IotaNativeCurrency();
-    } else if (isSonicTestnet(chainId)) {
-        nativeCurrency = new SonicTestnetNativeCurrency();
     } else if (isSonic(chainId)) {
         nativeCurrency = new SonicNativeCurrency();
     } else {

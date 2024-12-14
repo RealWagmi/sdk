@@ -11,5 +11,4 @@ export * from './is-avalanche';
 export * from './is-metis';
 export * from './is-metis-sepolia';
 export * from './is-iota';
-export * from './is-sonic-testnet';
 export * from './is-sonic';

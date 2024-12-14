@@ -12,7 +12,6 @@ export enum ChainId {
     IOTA = 8822,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
-    SONIC_TESTNET = 57054,
     METIS_SEPOLIA = 59902,
 }
 

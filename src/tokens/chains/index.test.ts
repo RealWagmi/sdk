@@ -18,7 +18,6 @@ test('exports', () => {
           "baseTokens",
           "iotaTokens",
           "sonicTokens",
-          "sonicTestnetTokens",
         ]
 	`);
 });
