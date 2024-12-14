@@ -14,7 +14,6 @@ test('exports', () => {
           "avalancheTokens",
           "arbitrumTokens",
           "metisTokens",
-          "metisSepoliaTokens",
           "baseTokens",
           "iotaTokens",
           "sonicTokens",

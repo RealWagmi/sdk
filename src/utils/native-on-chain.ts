@@ -10,7 +10,6 @@ import {
     FantomNativeCurrency,
     KavaNativeCurrency,
     MetisNativeCurrency,
-    MetisSepoliaNativeCurrency,
     PolygonNativeCurrency,
     IotaNativeCurrency,
     Token,
@@ -19,7 +18,6 @@ import {
 } from '../entities';
 import { ChainId } from '../constants/chains';
 import { isMetis } from './is-metis';
-import { isMetisSepolia } from './is-metis-sepolia';
 import { isIota } from './is-iota';
 import { isSonic } from './is-sonic';
 
@@ -40,8 +38,6 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new PolygonNativeCurrency();
     } else if (isMetis(chainId)) {
         nativeCurrency = new MetisNativeCurrency();
-    } else if (isMetisSepolia(chainId)) {
-        nativeCurrency = new MetisSepoliaNativeCurrency();
     } else if (isIota(chainId)) {
         nativeCurrency = new IotaNativeCurrency();
     } else if (isSonic(chainId)) {

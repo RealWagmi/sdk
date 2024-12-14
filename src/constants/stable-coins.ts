@@ -10,8 +10,7 @@ import {
     polygonTokens, 
     zkSyncTokens, 
     metisTokens,
-    baseTokens, 
-    metisSepoliaTokens,
+    baseTokens,
     iotaTokens,
 } from '../tokens';
 
@@ -31,7 +30,6 @@ export const STABLE_COINS= {
     [ChainId.ARBITRUM]: [arbitrumTokens.usdt, arbitrumTokens.usdc, arbitrumTokens.usdc_e],
     [ChainId.METIS]: [metisTokens.usdt, metisTokens.usdc],
     [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim],
-    [ChainId.METIS_SEPOLIA]: [metisSepoliaTokens.tusdt, metisSepoliaTokens.tdai],
     [ChainId.IOTA]: [iotaTokens.usdt, iotaTokens.usdc],
     [ChainId.SONIC]: []
 } satisfies Record<ChainId, Token[]>;

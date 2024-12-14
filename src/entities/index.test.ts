@@ -20,7 +20,6 @@ test('exports', () => {
             "KavaNativeCurrency",
             "AvalancheNativeCurrency",
             "MetisNativeCurrency",
-            "MetisSepoliaNativeCurrency",
             "IotaNativeCurrency",
             "SonicNativeCurrency",
           ]

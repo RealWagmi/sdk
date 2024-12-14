@@ -16,7 +16,6 @@ test('exports', () => {
           "isKava",
           "isAvalanche",
           "isMetis",
-          "isMetisSepolia",
           "isIota",
           "isSonic",
         ]
