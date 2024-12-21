@@ -12,6 +12,7 @@ import {
     metisTokens,
     baseTokens,
     iotaTokens,
+    sonicTokens
 } from '../tokens';
 
 import { Token } from '../entities';
@@ -31,5 +32,5 @@ export const STABLE_COINS= {
     [ChainId.METIS]: [metisTokens.usdt, metisTokens.usdc],
     [ChainId.BASE]: [baseTokens.usdbc, baseTokens.usdc, baseTokens.mim],
     [ChainId.IOTA]: [iotaTokens.usdt, iotaTokens.usdc],
-    [ChainId.SONIC]: []
+    [ChainId.SONIC]: [sonicTokens.usdce]
 } satisfies Record<ChainId, Token[]>;
