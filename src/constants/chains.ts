@@ -12,6 +12,7 @@ export enum ChainId {
     IOTA = 8822,
     AVALANCHE = 43114,
     ARBITRUM = 42161,
+    ZILLIQA = 32769
 }
 
 export enum ChainType {
