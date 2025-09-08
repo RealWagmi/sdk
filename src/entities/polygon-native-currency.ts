@@ -7,7 +7,7 @@ import { Token } from './token';
 
 export class PolygonNativeCurrency extends NativeCurrency {
     public constructor() {
-        super(ChainId.POLYGON, 18, 'MATIC', 'MATIC');
+        super(ChainId.POLYGON, 18, 'POL', 'POL');
     }
 
     public equals(other: Currency): boolean {
