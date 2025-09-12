@@ -11,3 +11,4 @@ export * from './is-avalanche';
 export * from './is-metis';
 export * from './is-iota';
 export * from './is-sonic';
+export * from './is-zilliqa';

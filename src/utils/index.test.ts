@@ -18,6 +18,7 @@ test('exports', () => {
           "isMetis",
           "isIota",
           "isSonic",
+          "isZilliqa",
         ]
 	`);
 });

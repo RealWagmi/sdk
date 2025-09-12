@@ -17,6 +17,7 @@ test('exports', () => {
           "baseTokens",
           "iotaTokens",
           "sonicTokens",
+          "zilliqaTokens",
           "NATIVE_CHAIN_ID",
           "DEFAULT_ERC20_DECIMALS",
         ]

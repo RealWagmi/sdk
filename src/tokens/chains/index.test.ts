@@ -17,6 +17,7 @@ test('exports', () => {
           "baseTokens",
           "iotaTokens",
           "sonicTokens",
+          "zilliqaTokens",
         ]
 	`);
 });

@@ -11,3 +11,5 @@ export * from './metis';
 export * from './base';
 export * from './iota';
 export * from './sonic';
+export * from './zilliqa';
+

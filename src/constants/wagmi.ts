@@ -12,7 +12,8 @@ import {
     metisTokens,
     baseTokens,
     iotaTokens,
-    sonicTokens
+    sonicTokens,
+    zilliqaTokens
 } from '../tokens';
 
 import { Token } from '../entities';

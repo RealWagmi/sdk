@@ -22,6 +22,7 @@ test('exports', () => {
             "MetisNativeCurrency",
             "IotaNativeCurrency",
             "SonicNativeCurrency",
+            "ZilliqaNativeCurrency",
           ]
 	`);
 });

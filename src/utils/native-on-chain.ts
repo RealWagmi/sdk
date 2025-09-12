@@ -15,11 +15,13 @@ import {
     Token,
     NativeCurrency,
     SonicNativeCurrency,
+    ZilliqaNativeCurrency
 } from '../entities';
 import { ChainId } from '../constants/chains';
 import { isMetis } from './is-metis';
 import { isIota } from './is-iota';
 import { isSonic } from './is-sonic';
+import { isZilliqa } from './is-zilliqa';
 
 const cachedNativeCurrency: { [chainId: number]: NativeCurrency | Token } = {};
 
@@ -42,6 +44,8 @@ export function nativeOnChain(chainId: ChainId): NativeCurrency | Token {
         nativeCurrency = new IotaNativeCurrency();
     } else if (isSonic(chainId)) {
         nativeCurrency = new SonicNativeCurrency();
+    } else if (isZilliqa(chainId)) {
+        nativeCurrency = new ZilliqaNativeCurrency();
     } else {
         nativeCurrency = Ether.onChain(chainId);
     }
